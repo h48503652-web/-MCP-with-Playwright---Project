@@ -29,26 +29,28 @@ Ensure you have `uv` installed on your system.
 Clone the repository, navigate to the `project-template` folder, and sync the dependencies:
 ```bash
 uv sync
-3. Install the Browser Engine
-Install the Chromium browser required by Playwright:
+```
 
+### 3. Install the Browser Engine
+Install the Chromium browser required by Playwright:
 ```bash
 uv run playwright install chromium
-4. Start the Host
-Run the interactive terminal chat to start communicating with the Agent:
+```
 
+### 4. Start the Host
+Run the interactive terminal chat to start communicating with the Agent:
 ```bash
 uv run host.py
-💬 Example Queries
+```
+
+## 💬 Example Queries
 Once the Host is running, you can ask the Agent questions like:
 
-"What is the forecast in Jerusalem?"
+* "What is the forecast in Jerusalem?"
+* "מה מזג האוויר בתל אביב היום?"
+* "Is it going to rain in Haifa tomorrow?"
 
-"מה מזג האוויר בתל אביב היום?"
+**Watch the magic happen:** The Agent will automatically open Chromium, translate the city name to Hebrew, search for it, select the correct autocomplete option, scrape the latest forecast, and provide you with a clean, localized answer right in the terminal!
 
-"Is it going to rain in Haifa tomorrow?"
-
-Watch the magic happen: The Agent will automatically open Chromium, translate the city name to Hebrew, search for it, select the correct autocomplete option, scrape the latest forecast, and provide you with a clean, localized answer right in the terminal!
-
-Developed by Chani Zarbiv
-
+---
+*Developed by Chani Zarbiv*
